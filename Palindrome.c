@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int r,n,s=0,q;
+    int n,i,q,s=0,r;
     scanf("%d",&n);
     q=n;
     while(q!=0)
     {
         r=q%10;
         q=q/10;
-        s=s*10+r;
+        s=(s*10)+r;
     }
     if(s==n)
     {
@@ -16,6 +16,6 @@ int main()
     }
     else
     {
-        printf("False");
+    printf("False");
     }
 }
