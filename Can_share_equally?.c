@@ -2,14 +2,13 @@
 int main()
 {
     int x,y,n;
-    scanf("%d%d%d",&x,&y);
+    scanf("%d%d",&x,&y);
     if(x%2==0&&x!=0||x==0&&y%2==0)
-    {
-        printf("YES");
-        
-    }
-    else
-    {
-        printf("NO");
-    }
+{
+ printf("YES");   
+}
+else
+{
+    printf("NO");
+}
 }
