@@ -1,14 +1,17 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int i,l,u;
-    scanf("%d%d",&l,&u);
-    for(i=1;i<=u;i++)
+    int n,m,g,l,i;
+    scanf("%d%d",&n,&m);
+    for(i=1;i<=n&&i<=m;i++)
     {
-        if(i*l%u==0)
+        if(m%i==0 && n%i==0)
         {
-            printf("%d",i*l);
-            break;
+            g=i;
         }
+    }
+    l=(m*n)/g;
+    {
+        printf("%d",l);
     }
 }
